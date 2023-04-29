@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Card from './Card'
+import CardwAxios from './CardwAxios'
 
-function App() {
+export default function App() {
+  // let a= fetch("https://api.openweathermap.org/data/2.5/weather?q=Islamabad&appid=69a067a3606d0a24c34c8d629ac33838&units=metric")
+  // a.then((value1)=>{
+  //   console.log(value1.status)
+  //   console.log(value1.ok)
+  //   return value1.json();
+  // }).then((value2)=>{
+  //   console.log(value2)
+  // })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <CardwAxios />
     </div>
-  );
+  )
 }
 
-export default App;
+
